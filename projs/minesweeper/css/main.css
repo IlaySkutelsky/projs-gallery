@@ -1,0 +1,39 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;        
+    font-size: 14px
+}
+
+.smiley {
+    font-size: 20px
+}
+
+table {
+    margin: auto;
+    border: 2px solid black;
+}
+
+td {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border: 1px solid gray;    
+    padding: 10px;
+    text-align: left;
+}
+
+td:not(.cell-shown):hover {
+    background-color: wheat
+}
+
+.cell-shown {
+    background-color: #BEE7E8;
+}
+
+.is-hit {
+    background-color: red
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;    
+}

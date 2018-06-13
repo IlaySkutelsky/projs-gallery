@@ -1,0 +1,27 @@
+body {
+  margin: 3em 5em;
+  background-color:ghostwhite;
+}
+
+.btn-add {
+  margin: 1em 0;
+}
+
+.th-clickable {
+  cursor: pointer;
+}
+
+.th-clickable:hover {
+  cursor: pointer;
+  background-color: #c3c3eb;
+}
+
+.modal img {
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.btn-rate {
+  font-size: 1.2em;
+  padding: 0.1em 0.5em;
+}

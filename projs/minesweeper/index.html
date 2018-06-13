@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>~*Minesweeper*~</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame()">
+    <h1>Minesweeper</h1>
+
+    <div>
+        #💣: <span class="bombs-counter"> </span> &emsp;&emsp;&emsp;&emsp;
+        <span class="smiley">😊</span> &emsp;&emsp;&emsp;&emsp;
+        ⏰: <span class='timer'> 0 <span/> 
+    </div>
+    <br/>
+    
+    <table>        
+    </table>
+    
+    <br/>    
+    <button onclick="changeDifficulty(0, true)">Easy</button>
+    <button onclick="changeDifficulty(1, true)">Regular</button>
+    <button onclick="changeDifficulty(2, true)">Hard</button>
+    <br/>    
+
+    <p>
+        Best time for easy mode: <span class='best-time-0'> 999 seconds <span/> <br/> 
+    </p>
+    <p>    
+        Best time for reuglar mode: <span class='best-time-1'> 999 seconds <span/> <br/>
+    </p>
+    <p>
+        Best time for hard mode: <span class='best-time-2'> 999 seconds <span/> <br/>
+    </p>
+    
+        <script src=js/main.js></script>
+</body>
+
+</html>
