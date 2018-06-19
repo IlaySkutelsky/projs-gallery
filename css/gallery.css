@@ -65,10 +65,11 @@ body {
 .offcanvas-btn {
     z-index: 100000;
     position: fixed;
-    top: 8%;
+    top: 29%;
     left: 3%;
     height: 50px;
     width: 50px;
+    color: white;
     background: #e2cb36;
     border-radius: 50%;
     display: flex;
@@ -78,16 +79,21 @@ body {
     margin-left: 0;
     transition: all 0.3s ease;
 }
+.offcanvas-btn:hover {
+    background: #c3b44e;
+}
+
 .offcanvas-btn-open {
-    margin-left: 30vw;
+    margin-left: 360px;
 }
 .offcanvas-aside {
     position: fixed;
     height: 100%;
     z-index: 100000;
-    background: red;
-    width: 30vw;
-    left: -30vw;
+    background-color: #271a38;
+    color: white;
+    min-width: 350px;
+    left: -100%;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -118,7 +124,7 @@ body {
 }
 
 #mainNav {
-    background-color: #222222;
+    background-color: #271a38;
 }
 #mainNav .navbar-toggler {
     font-size: 12px;
@@ -130,6 +136,11 @@ body {
     background-color: #fed136;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#mainNav .navbar-toggler:hover {
+    background: #c3b44e;
 }
 #mainNav .navbar-brand {
     color: #fed136;
@@ -176,7 +187,7 @@ body {
     #mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
-        background-color: #222222;
+        background-color: #271a38;
     }
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
@@ -200,6 +211,7 @@ header.masthead .intro-text {
     padding-bottom: 100px;
 }
 header.masthead .intro-text .intro-lead-in {
+    text-shadow: 2px 2px 0px #000000;
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
@@ -207,6 +219,7 @@ header.masthead .intro-text .intro-lead-in {
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 header.masthead .intro-text .intro-heading {
+    text-shadow: 2px 2px 0px #000000;
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
@@ -244,6 +257,7 @@ header.masthead .intro-text .intro-heading {
     margin: 0 0 15px;
 }
 #portfolio .portfolio-item .portfolio-link {
+    box-shadow: 2px -2px 4px -3px rgba(0,0,0,0.5);  
     position: relative;
     display: block;
     max-width: 400px;

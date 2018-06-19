@@ -62,6 +62,6 @@ function renderModal(projIdx) {
                                     <li>Date: ${timeConverter(proj.publishedAt)}</li>
                                     <li>Client: Coding Academy</li>
                                     <li>Category: ${proj.labels.join(', ')}</li>
-                                    <li><a href="../projs-gallery/${proj.url}">link</a></li>
+                                    <li><a href="../projs-gallery/${proj.url}" target="_blank">link</a></li>
                                  `)    
 }
